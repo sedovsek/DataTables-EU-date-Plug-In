@@ -13,19 +13,19 @@ function calculate_date(date) {
 	if (eu_date[2]) {
 		var year = eu_date[2];
 	} else {
-		var year = 0;
+		var year = "";
 	}
 	
 	/*month*/
 	var month = eu_date[1];
 	if (month.length == 1) {
-		month = 0+month;
+		month = "0" + month;
 	}
 	
 	/*day*/
 	var day = eu_date[0];
 	if (day.length == 1) {
-		day = 0+day;
+		day = "0" + day;
 	}
 	
 	return (year + month + day) * 1;
